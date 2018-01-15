@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.date_input.pack.js"></script>
+</head>
+<!--树形菜单-->
+<link rel="stylesheet" href="css/demo.css" type="text/css">
+<link rel="stylesheet" href="css/zTreeStyle.css" type="text/css">
+<script type="text/javascript" src="js/jquery.ztree.core.js"></script>
+<!--树形菜单-->
+
+<!--树形菜单-->
+
+<script type="text/javascript">
+    <!--
+    var setting = {	};
+
+    var zNodes =[
+        { name:"专题统计", open:true,
+            children: [
+                { name:"父节点11 - 折叠",
+                    children: [
+                        { name:"叶子节点111"},
+                        { name:"叶子节点112"},
+                        { name:"叶子节点113"},
+                        { name:"叶子节点114"}
+                    ]},
+                { name:"父节点12 - 折叠",
+                    children: [
+                        { name:"叶子节点121"},
+                        { name:"叶子节点122"},
+                        { name:"叶子节点123"},
+                        { name:"叶子节点124"}
+                    ]},
+                { name:"父节点13 - 没有子节点", isParent:true}
+            ]},
+        { name:"数据源",
+            children: [
+                { name:"父节点21 - 展开", open:true,
+                    children: [
+                        { name:"叶子节点211"},
+                        { name:"叶子节点212"},
+                        { name:"叶子节点213"},
+                        { name:"叶子节点214"}
+                    ]},
+                { name:"父节点22 - 折叠",
+                    children: [
+                        { name:"叶子节点221"},
+                        { name:"叶子节点222"},
+                        { name:"叶子节点223"},
+                        { name:"叶子节点224"}
+                    ]},
+                { name:"父节点23 - 折叠",
+                    children: [
+                        { name:"叶子节点231"},
+                        { name:"叶子节点232"},
+                        { name:"叶子节点233"},
+                        { name:"叶子节点234"}
+                    ]}
+            ]},
+        { name:"F9", isParent:true}
+
+    ];
+
+    $(document).ready(function(){
+        $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+    });
+    //-->
+</script>
+<!--树形菜单-->
+<body>
+<!--弹出层-->
+<div class="model">
+    <div class="modelWrap">
+        <div class="modelTil clearfix">
+            <p>数据源对象</p>
+            <ul class="searchBtn">
+                <li class="searchBtnActive">按分类查找</li>
+                <li>按关键词查找</li>
+            </ul>
+
+            <i id="closeModel"></i>
+        </div>
+        <div class="modelBtm">
+            <div class="modelNav">
+                <div style="margin: 15px 0 15px 15px;padding-left: 10px;">
+                    <ul id="treeDemo" class="ztree"></ul>
+                </div>
+            </div>
+            <div class="modelTable">
+                <div class="table">
+                    <table id="table">
+                        <thead>
+                        <tr>
+                            <th>数据源对象ID</th>
+                            <th>数据源中文名称</th>
+                            <th>数据源英文名称</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="min-width: 45px;">538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modelBtm"  style="display: none;">
+            <div class="Inputsearch">
+                <div><input type="text"/></div>
+                <span>搜索</span>
+            </div>
+            <div class="modelTable modelTable02">
+                <div class="table">
+                    <table id="table02">
+                        <thead>
+                        <tr>
+                            <th>数据源对象ID</th>
+                            <th>数据源中文名称</th>
+                            <th>数据源英文名称</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="min-width: 45px;">538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td>最新预测调高调低公司</td>
+                            <td>RRP_ZXYCTGTDGS</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--弹出层结束-->
+
+<!--弹出层2-->
+<div class="model02">
+    <div class="modelWrap">
+        <div class="modelTil clearfix">
+            <p>格式化结果</p>
+            <i id="closeModel02"></i>
+        </div>
+        <div class="modelBtn">
+                sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三 sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水撒发大水方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水
+            sfdsfdsfds树大招风水电费第三方第三方的撒发大水撒发大水
+        </div>
+    </div>
+</div>
+<!--弹出层2结束-->
+
+<div class="top">
+    <div class="inner">
+        <img src="images/logo.png" alt=""/>
+        <ul class="topIcon">
+            <li class="topIconActive"><img src="images/topIcon01.png" alt=""/><br/>测试工具</li>
+            <li><img src="images/topIcon02.png" alt=""/><br/>接口文档</li>
+        </ul>
+
+        <span>登录</span>
+    </div>
+</div>
+<div class="apiInfo">
+    <div class="inner clearfix">
+        <div class="left">
+            <ul>
+                <li class="address"><span>API地址：</span><div><input type="text" placeholder="Http://api.chinabigdata.com/service"/></div>
+                    <img src="images/refresh.png" alt=""/></li>
+                <li><span>APPKEY：</span><div><input type="text" placeholder="hwfint85755712eety"/></div></li>
+                <li><span>SPPSECRET：</span><div><input type="text" placeholder="5AO1553136592413EO53010"/></div></li>
+                <li><span>API名称：</span><div><input type="text" placeholder="bas_job.dataSOURCE_Service"/></div></li>
+                <li>
+                    <span>返回格式:</span>
+                    <div style="padding: 0;width: calc(100% - 100px - 2px);">
+                        <select name="" id="select" style="padding: 0 6px;">
+                            <option>JSON</option>
+                            <option>String</option>
+                            <option>Number</option>
+                        </select>
+                    </div>
+                </li>
+                <li><span>数据源对象：</span><div id="submit">股票-日行情-1432</div></li>
+                <li><span>证券编码：</span><div><input type="text" placeholder="34191"/></div></li>
+                <li><span>交易截止日：</span><div><input type="text" class="date_picker" placeholder="2017-11-12"></div></li>
+                <li><span>过滤参数：</span><div><input type="text" placeholder="filter参数"/></div></li>
+            </ul>
+            <div class="submit">提交测试</div>
+        </div>
+        <div class="right">
+            <dl>
+                <dt>API请求参数（API REQUST）</dt>
+                <dd></dd>
+            </dl>
+            <dl>
+                <dt>API请求参数（API REQUST）<span class="formatting">格式化</span></dt>
+                <dd></dd>
+            </dl>
+            <dl>
+                <dt>API请求参数（API REQUST）</dt>
+                <dd></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div class="sampleData">
+    <div class="inner">
+        <p>样本数据</p>
+        <div class="table">
+            <table>
+                <thead>
+                <tr>
+                    <th style="min-width: 45px;"></th>
+                    <th style="min-width: 110px;">ID</th>
+                    <th style="min-width: 110px;">INFO_SOUR</th>
+                    <th style="min-width: 110px;">STD_NAME</th>
+                    <th style="min-width: 110px;">SECT_CODE</th>
+                    <th style="min-width: 110px;">SECT_SN</th>
+                    <th style="min-width: 110px;">P_SECT_ID</th>
+                    <th style="min-width: 110px;">ENT_TIME</th>
+                    <th style="min-width: 110px;">UPT_TIME</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>162565488</td>
+                    <td>沪深股票</td>
+                    <td>分类</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2012/2/23</td>
+                    <td>2017/5/10</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="inner">
+        <div class="footerLeft">
+            <ul>
+                <li>关于我们</li>
+                <li>用户协定</li>
+                <li>企业服务</li>
+                <li>帮助中心</li>
+                <li>联系我们</li>
+                <li>中文</li>
+                <li>English</li>
+            </ul>
+            <p style="float: left;">
+                <span>Copyright © 2017　BigData 版权所有</span>
+                <span>地址：徐家汇宜山路700号B2幢12层</span>
+            </p>
+        </div>
+        <div class="footerRight">021-68391812</div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $('.date_picker').date_input();//日历插件
+
+    /*模态框效果*/
+    $("#submit").click(function(){
+        $(".model").show();
+        $("body").css("overflow","hidden");
+        //**********************************弹框表格宽度设置
+        $("#table thead th").each(function(){
+            var index=$(this).index();
+            $(this).css("width",$("#table tbody tr:first-of-type").find("td").eq(index).css("width"));
+        })
+    });
+    $("#closeModel").click(function(){
+        $(".model").hide();
+        $("body").css("overflow","auto");
+    });
+    $(".modelTable tr td").click(function(){
+        $(".model").hide();
+        $("body").css("overflow","auto");
+
+    });
+    $(".model").click(function(ev){
+        ev=ev||evevt;
+        var oElm=ev.target||ev.srcElement;
+        if(oElm==this){
+            $(".model").hide();
+            $("body").css("overflow","auto");
+        }
+
+    });
+
+
+    /*select的颜色*/
+    $(function(){
+        $("#select").css("color","#b2b2b2");
+        $("#select").change(function(){
+            $("#select").css("color","#6e6e6e");
+        })
+    });
+//**********************************模态框2  20171128增加
+    $(".formatting").click(function(){
+        $(".model02").show();
+        $("body").css("overflow","hidden");
+    });
+    $(".model02").click(function(ev){
+        ev=ev||evevt;
+        var oElm=ev.target||ev.srcElement;
+        if(oElm==this){
+            $(".model02").hide();
+            $("body").css("overflow","auto");
+        }
+
+    });
+    $("#closeModel02").click(function(){
+        $(".model02").hide();
+        $("body").css("overflow","auto");
+    });
+
+    $(".searchBtn li").click(function(){
+        $(this).addClass("searchBtnActive").siblings().removeClass("searchBtnActive");
+        $(".modelBtm").hide();
+        $(".modelBtm").eq($(this).index()).show();
+        if($(this).index()==1){
+            //**********************************弹框表格宽度设置
+            $("#table02 thead th").each(function(){
+                var index=$(this).index();
+                $(this).css("width",$("#table02 tbody tr:first-of-type").find("td").eq(index).css("width"));
+            })
+        }else{
+            //**********************************弹框表格宽度设置
+            $("#table thead th").each(function(){
+                var index=$(this).index();
+                $(this).css("width",$("#table tbody tr:first-of-type").find("td").eq(index).css("width"));
+            })
+        }
+    });
+
+    $(".topIcon li").click(function(){
+        $(this).addClass("topIconActive").siblings().removeClass("topIconActive")
+    })
+</script>
